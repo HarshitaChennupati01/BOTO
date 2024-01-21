@@ -3,8 +3,6 @@ package Employee_Application_Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.paulhammant.ngwebdriver.ByAngular;
-
 public class Coverages_Page extends Driver_Page{
 	private final static By bypolicydownload=By.xpath("//button[text()=' Policy Features ']");
 	private final static By byecard1=By.xpath("(//button[contains(text(),'E-Card')])[1]");

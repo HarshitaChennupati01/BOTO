@@ -1,7 +1,5 @@
 package Employee_Application_Pages;
 
-import javax.mail.event.MailEvent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
