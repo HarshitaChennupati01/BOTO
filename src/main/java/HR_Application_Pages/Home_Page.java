@@ -15,7 +15,7 @@ public class Home_Page extends Driver_Page{
     private final static By bymenuicon=By.xpath("(//div[@class='sidenav-toggler-inner'])[1]");
     private final static By bydashboard=By.xpath("//i[@class='fa-home fas ni purple1']");
     private final static By bymenu=By.xpath("//div[@class='sidenav-toggler-inner']");
-    private final static By byGMCpolicy=By.xpath("//i[@class='fas fa-medkit icon-custom icon-custom-active']");
+    
     
     
 	public static WebElement ClickOnProfile() throws InterruptedException
@@ -54,10 +54,7 @@ public class Home_Page extends Driver_Page{
 	{
 		return driver.findElement(bymenu);
 	}
-	public static WebElement ClickOnGMC()
-	{
-		return driver.findElement(byGMCpolicy);
-	}
+	
 	
 	
 	
@@ -110,19 +107,5 @@ public class Home_Page extends Driver_Page{
 	{
 		ClickOnmenu().click();
 	}
-	public static void ClickOnGMCPolicy()
-	{
-		ClickOnGMC().click();
-		
-//		try
-//		{
-//			ClickOnGMC().click();
-//		}
-//		catch(Exception e)
-//		{
-//			ClickonMenuIcon();
-//			
-//			ClickOnGMC().click();
-//		}
-	}
+	
 }

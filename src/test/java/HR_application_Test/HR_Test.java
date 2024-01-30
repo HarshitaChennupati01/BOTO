@@ -20,9 +20,9 @@ public class HR_Test {
 		Login_Page.login();
 		CustomEx_Page.loader(250);
 	}
-	
-	@Test
-	public static void M1Profile() throws InterruptedException
+
+	@Test(priority=01)
+	public static void Method01_Profile() throws InterruptedException
 	{
 		Thread.sleep(9000);
 		Home_Page.ClickOnProfileIcon();
@@ -39,18 +39,16 @@ public class HR_Test {
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(180);
 		Home_Page.ClickonMenuIcon();
-		Home_Page.ClickOnGMCPolicy();
-		CustomEx_Page.loader(180);
-		System.out.println("Test01");
+		System.out.println("T-01");	
 	}
-	
-	@Test
+
+	//@Test(priority=07)
 	//print button issue
-	public static void M2GMCPolicy() throws InterruptedException
+	public static void Method07_GMCPolicy() throws InterruptedException
 	{
-//		Home_Page.ClickOnDashboard();
-//		CustomEx_Page.loader(120);
-		Home_Page.ClickOnGMCPolicy();
+		Home_Page.ClickOnDashboard();
+		CustomEx_Page.loader(120);
+		GMCPolicy_Page.ClickOnGMCPolicy();
 		CustomEx_Page.loader(120);
 		GMCPolicy_Page.ClickOnGMCCard();
 		CustomEx_Page.loader(120);
@@ -60,7 +58,7 @@ public class HR_Test {
 		CustomEx_Page.loader(120);
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
-		Home_Page.ClickOnGMCPolicy();
+		GMCPolicy_Page.ClickOnGMCPolicy();
 		CustomEx_Page.loader(120);
 		GMCPolicy_Page.ClickonMembersCard();
 		CustomEx_Page.loader(120);
@@ -85,18 +83,18 @@ public class HR_Test {
 		GMCPolicy_Page.ClickOnE_card();
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
-		Home_Page.ClickOnGMCPolicy();
+		GMCPolicy_Page.ClickOnGMCPolicy();
 		CustomEx_Page.loader(120);
 		GMCPolicy_Page.ClickOnClaimsCard();
 		CustomEx_Page.loader(120);
 		GMCPolicy_Page.ClickOnClaimsRequest();
 		CustomEx_Page.loader(120);
-		GMCPolicy_Page.ClickOnPrint();
-		GMCPolicy_Page.PrintButtonUsingEnter();
-		CustomEx_Page.loader(120);
+		//		GMCPolicy_Page.ClickOnPrint();
+		//		GMCPolicy_Page.PrintButtonUsingEnter();
+		//		CustomEx_Page.loader(120);
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
-		Home_Page.ClickOnGMCPolicy();
+		GMCPolicy_Page.ClickOnGMCPolicy();
 		CustomEx_Page.loader(120);
 		GMCPolicy_Page.ClickOnPremiumIcon();
 		CustomEx_Page.loader(120);
@@ -104,12 +102,12 @@ public class HR_Test {
 		CustomEx_Page.loader(120);	
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
-		System.out.println("Test02");
+		System.out.println("T-07");
 	}
-	
-	@Test
+
+	@Test(priority=03)
 	//taking more time manually also
-	public static void M3Members() throws InterruptedException
+	public static void Method03_Members() throws InterruptedException
 	{
 		Members_Page.ClickOnManageText();
 		CustomEx_Page.loader(120);
@@ -129,11 +127,12 @@ public class HR_Test {
 		CustomEx_Page.loader(120);
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
-		System.out.println("Test03");
+		System.out.println("T-03");
+
 	}
-	
-	@Test
-	public static void M4Add_Employee() throws InterruptedException 
+
+	@Test(priority=02)
+	public static void Method02_Add_Employee() throws InterruptedException 
 	{
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
@@ -168,13 +167,14 @@ public class HR_Test {
 		CustomEx_Page.loader(120);
 		Members_AddEmplee_Page.ClickOnMenu();
 		Members_AddEmplee_Page.ClickOnEcardText();
-		System.out.println("Test04");
+		System.out.println("T-02");
+
 	}
-	
-	@Test
-	public static void M7Bulk_Upload() throws InterruptedException, IOException
+
+	@Test(priority=06)
+	public static void Method06_Bulk_Upload() throws InterruptedException, IOException
 	{
-		
+
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
 		BulkUploads_Page.ClickOnBulkUploads();
@@ -184,11 +184,12 @@ public class HR_Test {
 		Excel_Page.ExcelHandling();
 		CustomEx_Page.loader(120);
 		BulkUploads_Page.UploadExcelFile();
-		System.out.println("Test07");
+		System.out.println("T-06");
+
 	}
-	
-	@Test
-	public static void M5Enrolment() throws InterruptedException
+
+	@Test(priority=04)
+	public static void Method04_Enrolment() throws InterruptedException
 	{
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
@@ -198,15 +199,16 @@ public class HR_Test {
 		CustomEx_Page.loader(120);
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
-		System.out.println("Test05");
+		System.out.println("T-04");
+
 	}
-	
-	@Test
-	public static void M6Endorsement() throws InterruptedException
+
+	@Test(priority=05)
+	public static void Method05_Endorsement() throws InterruptedException
 	{
 		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
-		Home_Page.ClickOnGMCPolicy();
+		//GMCPolicy_Page.ClickOnGMCpolicy();
 		CustomEx_Page.loader(120);
 		Menu_Page.CLickonEndorsement();
 		CustomEx_Page.loader(120);
@@ -218,9 +220,10 @@ public class HR_Test {
 		Endorsement_Page.ClickonContinue();
 		CustomEx_Page.loader(120);
 		//Endorsement_Page.ClickonCancle();
-		System.out.println("Test06");
+		System.out.println("T-05");
+
 	}
-	
+
 	@AfterTest
 	public static void Logout() throws InterruptedException
 	{

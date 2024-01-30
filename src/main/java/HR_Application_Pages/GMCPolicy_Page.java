@@ -9,10 +9,11 @@ import org.openqa.selenium.interactions.Actions;
 import com.paulhammant.ngwebdriver.ByAngular;
 
 public class GMCPolicy_Page extends Driver_Page{
+	private final static By byGMCpolicy=By.xpath("//i[@class='fas fa-medkit icon-custom icon-custom-active']");
 	private final static By byGMC=By.xpath("//p[@class='name-member']");	
 	private final static By bypolicy=By.xpath("(//i[@class='fas fa-download'])[1]");
 	private final static By byfeatures=By.xpath("(//i[@class='fas fa-download'])[2]");
-	private final static By bymembers=By.cssSelector("div[class='name-member-heading']");
+	private final static By bymembers=By.xpath("//div[@class='name-member-heading']");
 	private final static By bymenuicon=By.xpath("(//i[@class='fa-ellipsis-v fas purple-light'])[1]");
 	private final static By byview=By.xpath("//a[text()=' View ']");
 	private final static By byecarddownload=By.xpath("//button[@class='btn-sm btn-custom-outline']");
@@ -30,7 +31,10 @@ public class GMCPolicy_Page extends Driver_Page{
 	private final static By bydownload=By.xpath("//span[text()='Download']");
 	
 	
-	
+	public static WebElement ClickOnGMCPolicy()
+	{
+		return driver.findElement(byGMCpolicy);
+	}
 	public static WebElement ClickOnGMC()
 	{
 		return driver.findElement(byGMC);
@@ -110,6 +114,21 @@ public class GMCPolicy_Page extends Driver_Page{
 	
 	
 	
+	public static void ClickOnGMCpolicy()
+	{
+		ClickOnGMC().click();
+		
+//		try
+//		{
+//			ClickOnGMC().click();
+//		}
+//		catch(Exception e)
+//		{
+//			ClickonMenuIcon();
+//			
+//			ClickOnGMC().click();
+//		}
+	}
 	public static void ClickOnGMCCard()
 	{
 		ClickOnGMC().click();

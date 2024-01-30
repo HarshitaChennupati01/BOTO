@@ -58,7 +58,7 @@ public class BulkUploads_Page extends Driver_Page{
 	public static void UploadExcelFile()
 	{
 		 By fileInputLocator = By.xpath("//label[text()='Select file']");
-		 String filePath = "C:\\Users\\venka\\Downloads\\addEmployeeFormat.xlsx";
+		 String filePath = "C:\\Users\\HP\\Downloads\\addEmployeeFormat.xlsx";
 		 uploadFile(driver, fileInputLocator, filePath);
 	}
 		 

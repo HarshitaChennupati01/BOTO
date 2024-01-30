@@ -1,3 +1,4 @@
+
 package HR_Application_Pages;
 
 import java.util.List;
@@ -94,15 +95,15 @@ public class AddEmployee_Page extends Driver_Page{
 	}
 	public static void ClickOnEmployeeId()
 	{
-		ClickOnEmployee().sendKeys("00100BOTO");;
+		ClickOnEmployee().sendKeys("BT001");;
 	}
 	public static void ClickOnMemberId()
 	{
-		ClickOnMember().sendKeys("00100MBOTO");;
+		ClickOnMember().sendKeys("MBT001");;
 	}
 	public static void ClickOnName()
 	{
-		ClickFullName().sendKeys("Dev");
+		ClickFullName().sendKeys("Rajesh");
 	}
 	public static void ClickOnDesignation() throws InterruptedException
 	{
@@ -115,7 +116,7 @@ public class AddEmployee_Page extends Driver_Page{
 	public static void CLickOnDateOnJoining()
 	{
 		ClickOnDOJ().click();
-		ClickOnDOJ().sendKeys("12/27/2023");
+		ClickOnDOJ().sendKeys("12/30/2023");
 	}
 	public static void SelectDepartment()
 	{
@@ -146,11 +147,11 @@ public class AddEmployee_Page extends Driver_Page{
 	{
 		ClickOnMail().click();
 		Thread.sleep(4000);
-		ClickOnMail().sendKeys("dev@yopmail.com");
+		ClickOnMail().sendKeys("rajesh@yopmail.com");
 	}
 	public static void ClickOnMobileNumber()
 	{
-		CLickOnMobile().sendKeys("9876509845");
+		CLickOnMobile().sendKeys("7676789054");
 	}
 	public static void SelectLocation() throws InterruptedException
 	{

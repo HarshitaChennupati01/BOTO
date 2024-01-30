@@ -3,39 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Employee_Application_Test.Employee_Test">
-        <methods>
-          <include name="ClaimsFormDownload"/>
-          <include name="Driver"/>
-          <include name="Home"/>
-          <include name="ReportClaims"/>
-          <include name="Logout"/>
-          <include name="Coverages"/>
-          <include name="MyProfile"/>
-        </methods>
-      </class> <!-- Employee_Application_Test.Employee_Test -->
       <class name="User_Application_Test.User_Test">
         <methods>
           <include name="Claims"/>
           <include name="Endorsement"/>
           <include name="Premium"/>
-          <include name="Clients"/>
           <include name="Login"/>
           <include name="Home"/>
-          <include name="Upload"/>
         </methods>
       </class> <!-- User_Application_Test.User_Test -->
       <class name="HR_application_Test.HR_Test">
         <methods>
           <include name="Logout"/>
-          <include name="M1Profile"/>
           <include name="M2GMCPolicy"/>
           <include name="M4Add_Employee"/>
           <include name="M3Members"/>
-          <include name="M6Endorsement"/>
           <include name="Login"/>
           <include name="M7Bulk_Upload"/>
-          <include name="M5Enrolment"/>
         </methods>
       </class> <!-- HR_application_Test.HR_Test -->
     </classes>

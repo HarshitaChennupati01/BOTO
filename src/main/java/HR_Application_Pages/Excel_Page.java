@@ -16,16 +16,16 @@ public class Excel_Page extends Driver_Page{
 
 	 public static void ExcelHandling() throws IOException 
 	 {
-			String filePath = "C:\\Users\\MY PC\\Downloads\\addEmployeeFormat.xlsx";
+			String filePath = "C:\\Users\\HP\\Downloads\\addEmployeeFormat.xlsx";
 			FileInputStream fileInputStream = new FileInputStream(new File(filePath));
 			XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
 			XSSFSheet sheet=workbook.getSheet("sheet1");
 			int noOfRows=sheet.getPhysicalNumberOfRows();		
 			int noOfCols=sheet.getRow(0).getLastCellNum();
 						String[][] data = {
-								{"00100BOTO", "Dev", "dev@yopmail.com","9876509845","Hyderabad","Male","500000","","Senior Manager operation-ocean freight","10/13/1995","28","12/27/2023","Self"},
-								{"00100BOTO", "Dep01", "","2345678942","Hyderabad","Female","","","","23/05/1997","26","","Spouse"},
-								{"00100BOTO", "Dep01", "","","Hyderabad","Male","","","","05/12/2015","8","","Son"},
+								{"BT001", "Rajesh", "rajesh@yopmail.com","7676789054","Hyderabad","Male","500000","","Senior Manager operation-ocean freight","10/13/1995","28","12/30/2023","Self"},
+								{"BT001", "Dep01", "","7342561890","Hyderabad","Female","","","","23/05/1997","26","","Spouse"},
+								
 						};
 						int rowIndex = 1;
 						for (String[] rowData : data) {
