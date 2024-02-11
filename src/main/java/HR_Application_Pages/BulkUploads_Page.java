@@ -12,10 +12,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class BulkUploads_Page extends Driver_Page{
-	private final static By bybulk=By.xpath("//span[text()='Bulk Upload']");
+	private final static By bybulk=By.xpath("(//span[text()='Bulk Upload'])[2]");
 	private final static By bydownloadadd=By.xpath("(//span[contains(text(),'Download')])[1]");
 	private final static By byupload=By.xpath("(//span[text()='Upload'])[1]");
-	private final static By byselectfile=By.xpath("//label[text()='Select file']");
+	//private final static By byselectfile=By.xpath("//label[text()='Select file']");
+	private final static By byuploadbutton=By.xpath("//button[@class='btn btn-warning btn-custom-bg']");
 	
 	
 	
@@ -31,9 +32,13 @@ public class BulkUploads_Page extends Driver_Page{
 	{
 		return driver.findElement(byupload);
 	}
-	public static WebElement ClickOnBrowse()
+//	public static WebElement ClickOnBrowse()
+//	{
+//		return driver.findElement(byselectfile);
+//	}
+	public static WebElement ClickOnUploadButton()
 	{
-		return driver.findElement(byselectfile);
+		return driver.findElement(byuploadbutton);
 	}
 	
 	
@@ -50,9 +55,13 @@ public class BulkUploads_Page extends Driver_Page{
 	{
 		ClickOnUpload().click();
 	}
-	public static void ClickOnSelectFile()
+//	public static void ClickOnSelectFile()
+//	{
+//		ClickOnBrowse().click();
+//	}
+	public static void ClickOnUploadbutton()
 	{
-		ClickOnBrowse().click();
+		ClickOnUploadButton().click();
 	}
 	
 	public static void UploadExcelFile()

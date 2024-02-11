@@ -175,7 +175,7 @@ public class HR_Test {
 	public static void Method06_Bulk_Upload() throws InterruptedException, IOException
 	{
 
-		Home_Page.ClickOnDashboard();
+//		Home_Page.ClickOnDashboard();
 		CustomEx_Page.loader(120);
 		BulkUploads_Page.ClickOnBulkUploads();
 		CustomEx_Page.loader(120);
@@ -183,8 +183,13 @@ public class HR_Test {
 		CustomEx_Page.loader(120);
 		Excel_Page.ExcelHandling();
 		CustomEx_Page.loader(120);
+		BulkUploads_Page.ClickOnUploadaddition();
+		CustomEx_Page.loader(120);
+//		BulkUploads_Page.ClickOnSelectFile();
+//		CustomEx_Page.loader(120);
 		BulkUploads_Page.UploadExcelFile();
-		System.out.println("T-06");
+		CustomEx_Page.loader(120);
+		BulkUploads_Page.ClickOnUploadbutton();
 
 	}
 

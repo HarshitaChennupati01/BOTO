@@ -23,8 +23,8 @@ public class Excel_Page extends Driver_Page{
 			int noOfRows=sheet.getPhysicalNumberOfRows();		
 			int noOfCols=sheet.getRow(0).getLastCellNum();
 						String[][] data = {
-								{"BT001", "Rajesh", "rajesh@yopmail.com","7676789054","Hyderabad","Male","500000","","Senior Manager operation-ocean freight","10/13/1995","28","12/30/2023","Self"},
-								{"BT001", "Dep01", "","7342561890","Hyderabad","Female","","","","23/05/1997","26","","Spouse"},
+								{"BT001", "Rajesh", "rajesh@yopmail.com","7676789054","Hyderabad","Male","500000","","Senior Manager operation-ocean freight","10/13/1995","28","12/27/2023","Self"},
+								{"BT001", "Dep01", "","3456782190","Hyderabad","Female","","","","23/05/1999","25","","Spouse"},
 								
 						};
 						int rowIndex = 1;

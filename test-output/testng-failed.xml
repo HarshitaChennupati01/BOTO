@@ -6,11 +6,8 @@
       <class name="HR_application_Test.HR_Test">
         <methods>
           <include name="Logout"/>
-          <include name="Method04_Enrolment"/>
           <include name="Method06_Bulk_Upload"/>
-          <include name="Method07_GMCPolicy"/>
           <include name="Login"/>
-          <include name="Method03_Members"/>
         </methods>
       </class> <!-- HR_application_Test.HR_Test -->
     </classes>

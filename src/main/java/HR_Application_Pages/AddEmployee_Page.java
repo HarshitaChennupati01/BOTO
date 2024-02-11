@@ -116,7 +116,7 @@ public class AddEmployee_Page extends Driver_Page{
 	public static void CLickOnDateOnJoining()
 	{
 		ClickOnDOJ().click();
-		ClickOnDOJ().sendKeys("12/30/2023");
+		ClickOnDOJ().sendKeys("12/27/2023");
 	}
 	public static void SelectDepartment()
 	{
